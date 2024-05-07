@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшие шмотки</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_product.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__site_title">
+            <a href="index.html"> <img class="header__logo" src="img/logo.webp" alt="logo"></a>
+            <h1 class="header__info">Лучшие шмотки</h1>
+        </div>
+        <div class="header__menu">
+            <a class="sub_menu__list" href="#">Меню</a>
+            <ul class="menu__list">
+                <li class="list__one">
+                    <a href="#">Женское</a>
+                    <div class="dropdown-content">
+                        <a href="dresses.html">Платья</a>
+                        <a href="#">Юбки</a>
+                        <a href="#">Шорты</a>
+                    </div>
+                </li>
+
+                <li class="list__two">
+                    <a href="#">Мужское</a>
+                    <div class="dropdown-content">
+                        <a href="#">Штaны</a>
+                        <a href="#">Рубашки</a>
+                        <a href="#">Костюмы-тройка</a>
+                    </div>
+                </li>
+                <li class="list__three">
+                    <a href="#">Унисекс</a>
+                    <div class="dropdown-content">
+                        <a href="#">Верхняя одежда</a>
+                        <a href="#">Футболки</a>
+                        <a href="#">Носки</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="header__basket">
+            <a href="basket.html"><button><img src="img/cart.png"><span>Корзина</span></button></a>
+        </div>
+        <nav class="header__login">
+            <div class="login__buttons">
+                <button><img src="img/user.png"><span>Войти</span></button>
+                <button><img src="img/user-add.png"><span>Регистрация</span></button>
+            </div>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="product-page">
+            <div class="product-image">
+                <img src="img/dress_three.webp" alt="Платье">
+            </div>
+            <div class="product">
+                <div class="product-details">
+                    <h1>Платье</h1>
+                    <span class="cost">2000</span>
+                </div>
+                <div class="product-specs">
+                    <h2>О товаре</h2>
+                    <ul>
+                        <li>
+                            <span class="spec-name">Сезон:</span>
+                            <span class="spec-value">На любой сезон</span>
+                        </li>
+                        <li>
+                            <span class="spec-name">Материал:</span>
+                            <span class="spec-value">Текстиль</span>
+                        </li>
+                        <li>
+                            <span class="spec-name">Состав материала:</span>
+                            <span class="spec-value">75% Вискоза, 19% Полиэстер, 4% Нейлон, 2% Спандекс</span>
+                        </li>
+                        <li>
+                            <span class="spec-name">Коллекция:</span>
+                            <span class="spec-value">Базовая коллекция</span>
+                        </li>
+                        <li>
+                            <span class="spec-name">Рост:</span>
+                            <span class="spec-value">160-175</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="product-size">
+                    <h2>Выберите размер:</h2>
+                    <div class="optional__size">
+                        <div class="size__variant">
+                            <div class="variant__xs">
+                                <input type="checkbox" id="size_xs" name="size[] multiple" value="XS">
+                                <label for="size_xs">XS</label><br>
+                            </div>
+                            <div class="variant__s">
+                                <input type="checkbox" id="size_s" name="size[] multiple" value="S">
+                                <label for="size_s">S</label><br>
+                            </div>
+                            <div class="variant__m">
+                                <input type="checkbox" id="size_m" name="size[] multiple" value="M">
+                                <label for="size_m">M</label><br>
+                            </div>
+                            <div class="variant__l">
+                                <input type="checkbox" id="size_l" name="size[] multiple" value="L">
+                                <label for="size_l">L</label><br>
+                            </div>
+                            <div class="variant__xl">
+                                <input type="checkbox" id="size_xl" name="size[] multiple" value="XL">
+                                <label for="size_xl">XL</label><br>
+                            </div>
+                            <div class="variant__xxl">
+                                <input type="checkbox" id="size_xxl" name="size[] multiple" value="XXL">
+                                <label for="size_xxl">XXL</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="add-to-cart"><img src="img/cart.png">Добавить в корзину</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="about">
+          <h3>О нас</h3>
+          <p>Мы являемся ведущим магазином одежды, предлагающим широкий ассортимент стильной и качественной одежды для всех возрастов.</p>
+          <p>Мы гордимся нашим опытом и высоким уровнем обслуживания клиентов.</p>
+        </div>
+        <div class="menu">
+          <h3>Каталог</h3>
+            <li><a href="#">Мужская одежда</a></li>
+            <li><a href="#">Женская одежда</a></li>
+            <li><a href="#">Детская одежда</a></li>
+        </div>
+        <div class="contacts">
+          <h3>Контакты</h3>
+          <p>Адрес: ул. Примерная, 123, г. Примерный</p>
+          <p>Телефон: +7 (123) 456-7890</p>
+          <p>Email: info@example.com</p>
+        </div>
+      
+</div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
