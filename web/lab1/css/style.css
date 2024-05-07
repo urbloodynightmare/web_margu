@@ -1,0 +1,33 @@
+.header
+{
+	background-color: #8b80c5;
+}
+.header__logo
+{
+	height: 150px;
+	object-fit: cover;
+}
+.main
+{
+	background-color: #faf9ff;
+	background-image: url("../img/back.png");
+	background-repeat: repeat-y;
+	background-size: 100%;
+}
+.main__title
+{
+	font-weight: bold;
+}
+.menu__list
+{
+	display: flex;
+	flex-direction: column-reverse;
+}
+.three__top
+{
+	font-style: italic;
+}
+.footer
+{
+	background-color: #8b80c5;
+}

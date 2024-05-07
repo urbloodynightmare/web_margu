@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лучшие шмотки</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="header">
+		<div class="header__site_title">
+			<a href="index.html"> <img class = "header__logo" src="img/logo.png" alt="logo"></a>
+			<h1 class="header__info">Лучшие шмотки</h1>
+		</div>
+		<div class="header__menu">
+			<ul class="menu__list">
+				<li class="list__one">
+					<a href="#">Женское</a>
+					<div class="dropdown-content">
+						<a href="products.html">Платья</a>
+						<a href="#">Юбки</a>
+						<a href="#">Шорты</a>
+					</div>
+				</li>
+					
+				<li class="list__two">
+					<a href="#">Мужское</a>
+					<div class="dropdown-content">
+						<a href="#">Штaны</a>
+						<a href="#">Рубашки</a>
+						<a href="#">Костюмы-тройка</a>
+					</div>
+				</li>
+				<li class="list__three">
+					<a href="#">Унисекс</a>
+					<div class="dropdown-content">
+						<a href="#">Верхняя одежда</a>
+						<a href="#">Футболки</a>
+						<a href="#">Носки</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="header__basket">
+			<a href="basket.html"><button><img src="img/cart.png"><span>Корзина</span></button></a>
+		</div>
+		<nav class="header__login">
+			<div class="login__buttons">
+				<button><img src="img/user.png"><span>Войти</span></button>
+				<button><img src="img/user-add.png"><span>Регистрация</span></button>
+			</div>
+		</nav>
+	</div>
+	<div class="main">
+		<!--<p class="main__title">Добро пожаловать на сайт!</p>
+		<div class="main__menu">
+			<p class="menu__title">Посмотрите топ популярных категорий:</p>
+			<ol class="menu__list">
+				<li class="list__one">Самая популярная категория!</li>
+				<li class="list__two">Чуть более популярная категория</li>
+				<li class="list__three">Не очень популярна, но попала в <a class="three__top">топ 3</a></li>
+			</ol>
+		</div>-->
+		<form>
+			<div class="main__info">
+				<h1>Форма регистрации</h1>
+			</div>
+			<div class="main__required">
+				<div class="required__name">
+					<label class="required__name" for="name">Имя:</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+				<div class="required__email">
+					<label class="required__email" for="email">Почта:</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+				<div class="required__password">
+					<label class="required__password" for="password">Пароль (минимум 5 символов):</label>
+					<input type="password" id="password" name="password" minlength="5" required>
+				</div>
+				<div class="required__confirm_password">
+					<label class="required__confirm-password" for="confirm_password">Подтверждение пароля:</label>
+					<input type="password" id="confirm_password" name="confirm_password" required>
+					<p id="password_error" style="color: red;"></p>
+				</div>
+				<div class="required__consent">
+					<input type="checkbox" id="consent" name="consent" required>
+					<a class="consent" href="#">Я согласен на обработку персональных данных<span style="color: red">*</span></a>
+				</div>
+				<div class="required__city">
+					<label class="required__city" for="city">Город (выбрать из списка):</label>
+					<select id="city" name="city" required>
+						<option value="city1">Город 1</option>
+						<option value="city2">Город 2</option>
+						<option value="city3">Город 3</option>
+					</select>
+				</div>
+			</div>
+			<div class="main__additional">
+				<h3>Дополнительная информация</h3>
+			</div>
+			<div class="main__optional">
+				<div class="optional__avatar">
+					<label for="avatar">Загрузка файла аватара (разрешены только изображения):</label>
+					<input type="file" id="avatar" name="avatar" accept="image/*">
+				</div>
+				<div class="optional__gender">
+					<label for="gender">Пол:</label><br>
+					<div class="gender__variant">
+						<div class="variant__male">
+							<input type="radio" id="male" name="gender" value="male">
+							<label for="male">Мужской</label><br>
+						</div>
+						<div class="variant__female">
+							<input type="radio" id="female" name="gender" value="female">
+							<label for="female">Женский</label>
+						</div>
+						<div class="variant__unimportant">
+							<input type="radio" id="unimportant" name="gender" value="unimportant">
+							<label for="unimportant">Не важно</label>
+						</div>
+					</div>
+				</div>
+				<div class="optional__size">
+					<label for="clothing_size">Ваш размер одежды, можно выбрать несколько:</label><br>
+					<div class="size__variant">
+						<div class="variant__xs">
+							<input type="checkbox" id="size_xs" name="size[] multiple" value="XS">
+							<label for="size_xs">XS</label><br>
+						</div>
+						<div class="variant__s">
+							<input type="checkbox" id="size_s" name="size[] multiple" value="S">
+							<label for="size_s">S</label><br>
+						</div>
+						<div class="variant__m">
+							<input type="checkbox" id="size_m" name="size[] multiple" value="M">
+							<label for="size_m">M</label><br>
+						</div>
+						<div class="variant__l">
+							<input type="checkbox" id="size_l" name="size[] multiple" value="L">
+							<label for="size_l">L</label><br>
+						</div>
+						<div class="variant__xl">
+							<input type="checkbox" id="size_xl" name="size[] multiple" value="XL">
+							<label for="size_xl">XL</label><br>
+						</div>
+						<div class="variant__xxl">
+							<input type="checkbox" id="size_xxl" name="size[] multiple" value="XXL">
+							<label for="size_xxl">XXL</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button type="submit" id="register_button">Зарегистрироваться</button>
+		</form>
+	</div>
+	<div class="footer">
+		Подвальчик
+	</div>
+	<script src="script/script.js"></script>
+</body>
+
+</html>

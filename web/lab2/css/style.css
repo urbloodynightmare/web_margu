@@ -1,0 +1,108 @@
+body {
+  background-color: #ffffff; /* сиреневый фон */
+  color: #000000; /* черный текст */
+  font-family: Arial, sans-serif;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffe7fa; /* белый фон формы */
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  display: flex; /* использование flex контейнера */
+  flex-direction: column; /* расположение элементов в столбец */
+  align-items: center; /* выравнивание элементов по центру */
+}
+
+
+.main__required{
+	border-top: 1px solid black;
+	padding-top: 8px;
+}
+
+.main__optional{
+	border-top: 1px solid black;
+	padding-top: 8px;
+}
+
+.main__optional
+.main__required {
+	display: flex;
+	flex-direction: column;
+	border-top: 1px solid black;
+	padding-top: 8px;
+	margin: 8px 0;
+}
+.consent {
+	margin: 8px;
+	margin-left: 2px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[list="regions"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  margin-top: 8px;
+}
+
+.required__region,
+.required__city {
+	margin: 8px 0;
+}
+
+button {
+  background-color: #b8f2e7; /* цвет кнопки */
+  color: f000000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #6a1a9a; /* измененный цвет кнопки при наведении */
+}
+
+div[class^="required__"]:after {
+  /*content: "*";*/
+  color: #000000; /* цвет обязательных полей */
+  margin-left: 5px;
+}
+div[class^="optional__"]{
+	margin: 8px 0;
+}
+div[class^="variant"]{
+	display: flex;
+	align-items: center;
+}
+.optional {
+  color: #000000; /* цвет необязательных полей */
+}
+.gender__variant{
+	margin: 8px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.size__variant{
+	margin: 8px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
