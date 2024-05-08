@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лучшие шмотки</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_dresses.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="header__site_title">
+      <a href="index.html"> <img class="header__logo" src="img/logo.webp" alt="logo"></a>
+      <h1 class="header__info">Лучшие шмотки</h1>
+    </div>
+    <div class="header__menu">
+      <a class="sub_menu__list" href="#">Меню</a>
+      <ul class="menu__list">
+        <li class="list__one">
+          <a href="#">Женское</a>
+          <div class="dropdown-content">
+            <a href="dresses.html">Платья</a>
+            <a href="#">Юбки</a>
+            <a href="#">Шорты</a>
+          </div>
+        </li>
+
+        <li class="list__two">
+          <a href="#">Мужское</a>
+          <div class="dropdown-content">
+            <a href="#">Штaны</a>
+            <a href="#">Рубашки</a>
+            <a href="#">Костюмы-тройка</a>
+          </div>
+        </li>
+        <li class="list__three">
+          <a href="#">Унисекс</a>
+          <div class="dropdown-content">
+            <a href="#">Верхняя одежда</a>
+            <a href="#">Футболки</a>
+            <a href="#">Носки</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="header__basket">
+      <a href="basket.html"><button><img src="img/cart.png"><span>Корзина</span></button></a>
+    </div>
+    <nav class="header__login">
+      <div class="login__buttons">
+        <button><img src="img/user.png"><span>Войти</span></button>
+        <button><img src="img/user-add.png"><span>Регистрация</span></button>
+      </div>
+    </nav>
+  </div>
+  <div class="main">
+    <input type="text" id="searchInput" class="search-input" placeholder="Введите первые буквы для поиска">
+    <ul id="clothesList"></ul>
+
+    <div class="zagolovok">
+      <h1>Платья</h1>
+    </div>
+    <div class="main__main">
+      <div class="main__product">
+        <div class="sub_main__product">
+          <div class="product-card">
+            <img src="img/dress_one.webp" alt="Product 1">
+            <h3>Платье аляпистое</h3>
+            <span class="price">1500Р</span>
+            <div class="add-to-cart">
+              <button class="add-to-cart"><img src="img/cart.png">В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="img/dress_two.webp" alt="Product 2">
+            <h3>Платье зеленое</h3>
+            <span class="price">1400Р</span>
+            <div class="add-to-cart">
+              <button class="add-to-cart"><img src="img/cart.png">В корзину</button>
+            </div>
+          </div>
+        </div>
+        <div class="sub_main__product">
+          <div class="product-card">
+            <a href="product.html"><img src="img/dress_three.webp" alt="Product 2"></a>
+            <a href="product.html">
+              <h3>Платье черное</h3>
+            </a>
+            <span class="price">2000Р</span>
+            <div class="add-to-cart">
+              <button class="add-to-cart"><img src="img/cart.png">В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="img/dress_four.webp" alt="Product 2">
+            <h3>Платье черно-белое</h3>
+            <span class="price">1800Р</span>
+            <div class="add-to-cart">
+              <button class="add-to-cart"><img src="img/cart.png">В корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub_main__product">
+        <div class="product-card">
+          <img src="img/dress_five.webp" alt="Product 2">
+          <h3>Платье голубое</h3>
+          <span class="price">1600Р</span>
+          <div class="add-to-cart">
+            <button class="add-to-cart"><img src="img/cart.png">В корзину</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img/dress_six.webp" alt="Product 2">
+          <h3>Платье белое</h3>
+          <span class="price">1700Р</span>
+          <div class="add-to-cart">
+            <button class="add-to-cart"><img src="img/cart.png">В корзину</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="about">
+      <h3>О нас</h3>
+      <p>Мы являемся ведущим магазином одежды, предлагающим широкий ассортимент стильной и качественной одежды для всех
+        возрастов.</p>
+      <p>Мы гордимся нашим опытом и высоким уровнем обслуживания клиентов.</p>
+    </div>
+    <div class="menu">
+      <h3>Каталог</h3>
+      <li><a href="#">Мужская одежда</a></li>
+      <li><a href="#">Женская одежда</a></li>
+      <li><a href="#">Детская одежда</a></li>
+    </div>
+    <div class="contacts">
+      <h3>Контакты</h3>
+      <p>Адрес: ул. Примерная, 123, г. Примерный</p>
+      <p>Телефон: +7 (123) 456-7890</p>
+      <p>Email: info@example.com</p>
+    </div>
+
+  </div>
+  <script src="script/script_dresses.js"></script>
+</body>
+
+</html>
